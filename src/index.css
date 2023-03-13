@@ -69,3 +69,20 @@ body{
   color: #fff;
   font-size: 25px;
 }
+.video_footer_wrapper{
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  color: #fff;
+}
+.footer_img_holder{
+  width: 25px;
+  height: 25px;
+  background-color: gray;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

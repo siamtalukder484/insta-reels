@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react'
+import VideoFooter from './VideoFooter'
 import VideoHeader from './VideoHeader'
+import Reels from './Reels'
 
-const VideoCard = () => {
+const VideoCard = ({url, likes, shares, song, avatarSrc, channel}) => {
   let [isVideoPlaying, setIsVideoPlaying] = useState(false) 
   let videoRef = useRef(null)
   let onVideoPress = () => {
@@ -20,9 +22,16 @@ const VideoCard = () => {
             ref={videoRef}
             onClick={onVideoPress}
             className='video_player'
-            src='assets/somoytv.mp4'
+            src={url}
             alt="reels"
             loop 
+        />
+        <VideoFooter
+          channel={channel}
+          likes={likes}
+          shares={shares}
+          avatarSrc={avatarSrc}
+          song={song}
         />
     </div>
   )
