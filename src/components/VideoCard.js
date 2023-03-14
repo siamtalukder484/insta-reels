@@ -3,7 +3,7 @@ import VideoFooter from './VideoFooter'
 import VideoHeader from './VideoHeader'
 import Reels from './Reels'
 
-const VideoCard = ({url, likes, shares, song, avatarSrc, channel}) => {
+const VideoCard = ({url, likes, shares, song, avatarsrc, channel}) => {
   let [isVideoPlaying, setIsVideoPlaying] = useState(false) 
   let videoRef = useRef(null)
   let onVideoPress = () => {
@@ -30,7 +30,7 @@ const VideoCard = ({url, likes, shares, song, avatarSrc, channel}) => {
           channel={channel}
           likes={likes}
           shares={shares}
-          avatarSrc={avatarSrc}
+          avatarsrc={avatarsrc}
           song={song}
         />
     </div>

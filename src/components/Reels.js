@@ -30,7 +30,7 @@ const Reels = () => {
         />
         <VideoCard
           channel="siam484"
-          avatarSrc=""
+          avatarsrc="users"
           song="ta ta thoi thoi"
           url="assets/somoytv.mp4"
           likes={950}
